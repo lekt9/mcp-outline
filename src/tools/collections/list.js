@@ -3,7 +3,7 @@ import { outlineClient } from "../../outline.js";
 
 const toolSchema = {
   name: "list_collections",
-  description: "List all collections in Outline",
+  description: "Search for collections by name in Outline",
   inputSchema: {
     type: "object",
     properties: {
@@ -20,7 +20,7 @@ const toolSchema = {
         description: "The number of results to return",
       },
     },
-    required: [],
+    required: ["query"],
   },
 };
 
