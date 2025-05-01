@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is a Model Context Protocol (MCP) server implementation that integrates with [Outline](https://www.getoutline.com/) - our dev wiki application. The server provides tools for AI agents (mostly Cursor) to interact with Outline's API, enabling document and collection management operations.
+This is a Model Context Protocol (MCP) server implementation that integrates with Outline. The server provides tools for AI agents (mostly Cursor) to interact with Outline's API, enabling document and collection management operations.
 
 ## Features
 
@@ -37,7 +37,7 @@ npm install
 
 3. Create a `.env` file based on the `.env.template` file
 
-4. Get you Outline API token form [here](https://dev.fellow.wiki/settings/personal-api-keys) and set API_KEY in the .env file
+4. Get you Outline API token from your personal settings.
 
 5. Connect to your MCP client (like Cursor)
    NOTE: if you are connecting to Cursor, you **_technically_** don't need to do the whole `.env` file setup, but it can be usefull for local testing.
