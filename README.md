@@ -25,7 +25,7 @@ This is a Model Context Protocol (MCP) server implementation that integrates wit
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/mcp-outline-mcp.git
+git clone https://github.com/fellowapp/mcp-outline.git
 cd mcp-outline
 ```
 
