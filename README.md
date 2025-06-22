@@ -1,5 +1,7 @@
 # Outline MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@lekt9/mcp-outline)](https://smithery.ai/server/@lekt9/mcp-outline)
+
 ## Overview
 
 This is a Model Context Protocol (MCP) server implementation that integrates with Outline. The server provides tools for AI agents (mostly Cursor) to interact with Outline's API, enabling document and collection management operations.
@@ -13,6 +15,14 @@ This is a Model Context Protocol (MCP) server implementation that integrates wit
 - Manage collections (create, update, delete, list)
 
 ## Installation
+
+### Installing via Smithery
+
+To install mcp-outline for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@lekt9/mcp-outline):
+
+```bash
+npx -y @smithery/cli install @lekt9/mcp-outline --client claude
+```
 
 ### Prerequisites
 
