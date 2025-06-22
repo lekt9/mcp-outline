@@ -1,0 +1,33 @@
+# Smithery configuration file: https://smithery.ai/docs/build/project-config
+
+startCommand:
+  type: stdio
+  commandFunction:
+    # A JS function that produces the CLI command based on the given config to start the MCP on stdio.
+    |-
+    (config) => {
+      return {
+        command: 'node',
+        args: ['src/index.js'],
+        env: {
+          API_URL: config.apiUrl,
+          API_KEY: config.apiKey
+        }
+      };
+    }
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - apiUrl
+      - apiKey
+    properties:
+      apiUrl:
+        type: string
+        description: URL of the Outline API endpoint
+      apiKey:
+        type: string
+        description: Outline API key for authentication
+  exampleConfig:
+    apiUrl: https://api.getoutline.com/api
+    apiKey: YOUR_OUTLINE_API_KEY
